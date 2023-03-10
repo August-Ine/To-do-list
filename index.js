@@ -8,13 +8,12 @@ app.set('view engine', 'ejs');
 
 //handle get request to root 
 app.get("/", (req, res) => {
-    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const today = new Date(); //create Date() object
-    const dayOfWeek = daysOfWeek[today.getDay()];//getDay() returns index 0 to 6
-    console.log(dayOfWeek);
+    const date = new Date(); //new Date() object
+    const options = { weekday: 'long', day: 'numeric', month: 'long' };
+    const formattedDate = date.toLocaleString('en-US', options);
 
-    //log day of the week and render ejs template passing dayofWeek as variable
-    res.render('day', { day: dayOfWeek });
+    //render ejs using formattedDate as date string
+    res.render('day', { day: formattedDate });
 })
 
 
