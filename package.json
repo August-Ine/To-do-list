@@ -1,0 +1,19 @@
+{
+  "name": "what-day",
+  "version": "1.0.0",
+  "description": "Demo app using ejs templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/August269/What-Day.git"
+  },
+  "author": "august269",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/August269/What-Day/issues"
+  },
+  "homepage": "https://github.com/August269/What-Day#readme"
+}
