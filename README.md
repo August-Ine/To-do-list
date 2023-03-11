@@ -10,8 +10,7 @@ This is a simple web-based to-do list application built using Node.js, Express.j
 ### Usage
 1. Open a web browser and go to 'http://localhost:3000'.
 2. Create a new task by clicking on the "New Task" button.
-3. Edit a task by clicking on the "Edit" button next to it.
-4. Delete a task by clicking on the "Delete" button next to it.
+4. Delete a task by checking on the check-box button next to it.
 ### Features
 - Create, view, edit, and delete tasks
 - Responsive design that works on desktop and mobile devices
