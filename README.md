@@ -13,6 +13,7 @@ This is a simple web-based to-do list application built using Node.js, Express.j
 4. Delete a task by checking on the check-box button next to it.
 ### Features
 - Create, view, edit, and delete tasks
+- The task list automatically updates today's date
 - Responsive design that works on desktop and mobile devices
 - Tasks are stored in a JSON file on the server
 ### Technologies Used
