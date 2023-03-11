@@ -10,18 +10,24 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //set up view engine
 app.set('view engine', 'ejs');
 
+//serve public static files
+app.use(express.static("public"));
+
+//array to hold list items
+let listItems = [];
+
 //handle get request to root 
 app.get("/", (req, res) => {
     const date = new Date(); //new Date() object
     const options = { weekday: 'long', day: 'numeric', month: 'long' };
     const formattedDate = date.toLocaleString('en-US', options);
 
-    //render ejs using formattedDate as date string
-    res.render('day', { day: formattedDate });
+    //render ejs with date and array
+    res.render('day', { day: formattedDate, listItems: listItems });
 });
 
 app.post("/", (req, res) => {
-    console.log(req.body.newItem);
+    listItems.push(req.body.newItem); //push the new item to the list array
     res.redirect("/");
 })
 
