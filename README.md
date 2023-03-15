@@ -23,6 +23,7 @@ You will need to have the following software installed on your local machine:
 ### Technologies Used
 - Node.js: a server-side JavaScript runtime environment
 - Express.js: a web framework for Node.js
+- MongoDB: a document-oriented NoSQL database that provides a flexible and scalable way to store and manage data.
 - HTML: a markup language used to create web pages
 - CSS: a stylesheet language used to style web pages
 - JavaScript: a programming language used to add interactivity to web pages
