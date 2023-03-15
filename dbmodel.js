@@ -5,18 +5,26 @@ const mongoose = require("mongoose");
 const itemSchema = new mongoose.Schema({
     name: String
 });
+//create list schema
+const customListSchema = new mongoose.Schema({
+    name: String,
+    items: [itemSchema]
+})
 
-//create model
+//create items model
 const Item = mongoose.model("Item", itemSchema);
+//create customList model
+const Customlist = mongoose.model("Customlist", customListSchema)
 
-//documents for testing
-const tasks = [
-    Item({ name: "Wake up" }),
-    Item({ name: "Brush teeth" }),
-    Item({ name: "Walk the dog" })
+//default documents
+const defaultItems = [
+    Item({ name: "Welcome to your to-do list" }),
+    Item({ name: "Hit + to add item" }),
+    Item({ name: "Hit the check-box to remove" })
 ];
 
 module.exports = {
     Item: Item,
-    tasks: tasks
+    Customlist: Customlist,
+    defaultItems: defaultItems
 }
