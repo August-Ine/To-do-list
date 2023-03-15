@@ -27,5 +27,7 @@ You will need to have the following software installed on your local machine:
 - HTML: a markup language used to create web pages
 - CSS: a stylesheet language used to style web pages
 - JavaScript: a programming language used to add interactivity to web pages
+### Authors
+Augustine Kipkirui git: https://github.com/August269
 ### Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
